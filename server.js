@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 const errorHandler = require('./lib/error-handler');
 
 const dbPort = process.env.MONGODB_URI || 'mongodb://localhost/dev_db';
-
-mongoose.connect(dbPort);
+console.log(('dbPort', 'dbPort')
+mongoose.connection(dbPort);
 
 const playerRouter = require('./routes/player-routes');
 
