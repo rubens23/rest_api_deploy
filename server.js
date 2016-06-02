@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 const errorHandler = require('./lib/error-handler');
 
-const dbPort = process.env.MONGOLAB_URI || 'mongodb://localhost/dev_db';
+const dbPort = process.env.MONGODB_URI || 'mongodb://localhost/dev_db';
 
 mongoose.connect(dbPort);
 
