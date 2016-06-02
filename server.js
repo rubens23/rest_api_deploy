@@ -6,7 +6,7 @@ const errorHandler = require('./lib/error-handler');
 
 const dbPort = process.env.MONGOLAB_URI || 'mongodb://localhost/dev_db';
 
-mongoose.connect('mongodb://localhost/dev_db');
+mongoose.connect(dbPort);
 
 const playerRouter = require('./routes/player-routes');
 
